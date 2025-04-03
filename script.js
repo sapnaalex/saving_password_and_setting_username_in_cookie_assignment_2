@@ -92,3 +92,25 @@ pinInput.addEventListener('input', (e) => {
 document.getElementById('check').addEventListener('click', test);
 
 main();
+
+// async function findHashedNumber() {
+//   const storedHash = retrieve("sha256");
+
+//   if (!storedHash) {
+//     console.log("No hash stored in localStorage.");
+//     return;
+//   }
+
+//   for (let num = 100; num <= 999; num++) {
+//     const hash = await sha256(num.toString());
+//     if (hash === storedHash) {
+//       console.log(`The original number is: ${num}`);
+//       return;
+//     }
+//   }
+
+//   console.log("No matching number found.");
+// }
+
+// // Call this function in the browser console
+// findHashedNumber();
